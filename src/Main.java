@@ -7,7 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
-
+        task8();
     }
 
     public static void task1 () {
@@ -98,12 +98,29 @@ public class Main {
                     System.out.println("Сегодня пятница, " +friday+"-е число. Необходимо подготовить отчет");
                     friday = friday +7;
         }
+                System.out.println("     Задача 7.2");
+        friday = 2;
 
+                for (int day=0; day <31; day++){
+                    if (day%7==0){
+                        friday = friday + 7;
+                        System.out.println("Сегодня пятница, " +friday+"-е число. Необходимо подготовить отчет");
+                    }
+                }
 
 
     }
-
-
+    public static void task8() {
+        System.out.println("     Задача 8");
+        int thisyear = 2023;
+        int _200Yearsago=thisyear-200;
+        int after100years=thisyear+100;
+        for (int year = 0; year <= after100years; year += 79){
+            if(year >= _200Yearsago && year <= after100years) {
+                System.out.println(year);
+            }
+        }
+    }
 
 
 }
