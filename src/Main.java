@@ -101,12 +101,13 @@ public class Main {
                 System.out.println("     Задача 7.2");
         friday = 2;
 
-                for (int day=0; day <31; day++){
-                    if (day%7==0){
-                        friday = friday + 7;
-                        System.out.println("Сегодня пятница, " +friday+"-е число. Необходимо подготовить отчет");
-                    }
-                }
+        for (int day=0; friday <31; day++){
+            if (day%7==0){
+                System.out.println("Сегодня пятница, " +friday+"-е число. Необходимо подготовить отчет");
+
+            }
+            friday++;
+        }
 
 
     }
