@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
 
     }
 
@@ -40,7 +41,18 @@ public class Main {
             population = population + birthRate - mortalityRate;
         }
     }
-
-
+     public static void task4() {
+        System.out.println("     Задача 4");
+        int deposit = 15000;
+        int total = 0;
+        int i=1;
+        do {
+            total= total+total/100*7;
+            total=total+deposit;
+            System.out.println("Месяц "+i+ " сумма накоплений равна  "+total);
+            i++;
+        }
+        while (  total<=1_000_000);
+    }
 
 }
