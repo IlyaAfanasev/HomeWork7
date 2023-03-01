@@ -6,6 +6,8 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
+
     }
 
     public static void task1 () {
@@ -89,5 +91,19 @@ public class Main {
         }
         while (  year<9);
     }
+    public static void task7() {
+        System.out.println("     Задача 7.1");
+        int friday = 2;
+                while (friday <=31){
+                    System.out.println("Сегодня пятница, " +friday+"-е число. Необходимо подготовить отчет");
+                    friday = friday +7;
+        }
+
+
+
+    }
+
+
+
 
 }
