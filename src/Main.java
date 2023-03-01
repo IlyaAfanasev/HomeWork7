@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1 () {
@@ -69,6 +70,24 @@ public class Main {
                 i++;
         }
         while (  total<=1_000_000);
+    }
+    public static void task6() {
+        System.out.println("     Задача 6");
+        int deposit = 15000;
+        int total = 0;
+        int i=1;
+        int year =0;
+        do {
+            year = i/12;
+            total = total + total / 100 * 7;
+            total = total + deposit;
+            if(i%6==0) {
+                System.out.println("Месяц " + i + " сумма накоплений равна  " + total);
+            }
+
+            i++;
+        }
+        while (  year<9);
     }
 
 }
