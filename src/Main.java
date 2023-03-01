@@ -2,6 +2,8 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
+
     }
 
     public static void task1 () {
@@ -28,4 +30,17 @@ public class Main {
         }
         System.out.println();
     }
+       public static void task3 () {
+        System.out.println("     Задача 3");
+        int population=12_000_000;
+        int birthRate =population/1000*17;
+        int mortalityRate =population/1000*8;
+        for (int year=0; year<=10; year++) {
+            System.out.println("Год " + year + "" + ", численность населения составляет " +population);
+            population = population + birthRate - mortalityRate;
+        }
+    }
+
+
+
 }
