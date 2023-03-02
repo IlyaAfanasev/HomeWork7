@@ -74,7 +74,7 @@ public class Main {
         while (  total<=1_000_000);
     }
     public static void task6() {
-        System.out.println("     Задача 6");
+        System.out.println("     Задача 6.1");
         int deposit = 15000;
         int total = 0;
         int i=1;
@@ -90,6 +90,21 @@ public class Main {
             i++;
         }
         while (  year<9);
+        System.out.println("     Задача 6.2");
+        total = 0;
+        i=0;
+        for (year=0; year<9; year++){
+           do {
+               i++;
+               total = total + total / 100 * 7;
+               total = total + deposit;
+               if (i % 6 == 0) {
+                   System.out.println("Месяц " + i + " сумма накоплений равна  " + total);
+               }
+           }
+                while (i%12!=0);
+                continue;
+        }
     }
     public static void task7() {
         System.out.println("     Задача 7.1");
