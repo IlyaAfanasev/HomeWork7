@@ -10,115 +10,121 @@ public class Main {
         task8();
     }
 
-    public static void task1 () {
+    public static void task1() {
         System.out.println("     Задача 1");
         int salary = 15000;
         int total = 0;
         int mouth = 0;
-        while (total<2_459_000) {
-            total=total+salary;
+        while (total < 2_459_000) {
+            total = total + salary;
             mouth++;
-            System.out.println("Месяц "+mouth+ " сумма накоплений равна  "+total+"рублей");
+            System.out.println("Месяц " + mouth + " сумма накоплений равна  " + total + "рублей");
         }
     }
-    public static void task2 () {
+
+    public static void task2() {
         System.out.println("     Задача 2");
-        int a=0;
-        while (a<10) {
+        int a = 0;
+        while (a < 10) {
             a++;
-            System.out.print(a+" ");
+            System.out.print(a + " ");
         }
         System.out.println();
-        for(;a>=1;a--){
-            System.out.print(a+" ");
+        for (; a >= 1; a--) {
+            System.out.print(a + " ");
         }
         System.out.println();
     }
-    public static void task3 () {
+
+    public static void task3() {
         System.out.println("     Задача 3");
-        int population=12_000_000;
-        for (int year=0; year<=10; year++) {
-            int birthRate =population/1000*17;
-            int mortalityRate =population/1000*8;
-            System.out.println("Год " + year + "" + ", численность населения составляет " +population);
+        int population = 12_000_000;
+        for (int year = 0; year <= 10; year++) {
+            int birthRate = population / 1000 * 17;
+            int mortalityRate = population / 1000 * 8;
+            System.out.println("Год " + year + "" + ", численность населения составляет " + population);
             population = population + birthRate - mortalityRate;
         }
     }
-     public static void task4() {
+
+    public static void task4() {
         System.out.println("     Задача 4");
         int deposit = 15000;
         int total = 0;
-        int i=1;
+        int i = 1;
         do {
-            total= total+total/100*7;
-            total=total+deposit;
-            System.out.println("Месяц "+i+ " сумма накоплений равна  "+total);
+            total = total + total / 100 * 7;
+            total = total + deposit;
+            System.out.println("Месяц " + i + " сумма накоплений равна  " + total);
             i++;
         }
-        while (  total<=1_000_000);
+        while (total <= 1_000_000);
     }
+
     public static void task5() {
         System.out.println("     Задача 5");
         int deposit = 15000;
         int total = 0;
-        int i=1;
+        int i = 1;
         do {
             total = total + total / 100 * 7;
             total = total + deposit;
-            if(i%6==0) {
-                System.out.println("Месяц " + i + " сумма накоплений равна  " + total);
-            }
-
-                i++;
-        }
-        while (  total<=1_000_000);
-    }
-    public static void task6() {
-        System.out.println("     Задача 6.1");
-        int deposit = 15000;
-        int total = 0;
-        int i=1;
-        int year =0;
-        do {
-            year = i/12;
-            total = total + total / 100 * 7;
-            total = total + deposit;
-            if(i%6==0) {
+            if (i % 6 == 0) {
                 System.out.println("Месяц " + i + " сумма накоплений равна  " + total);
             }
 
             i++;
         }
-        while (  year<9);
+        while (total <= 1_000_000);
+    }
+
+    public static void task6() {
+        System.out.println("     Задача 6.1");
+        int deposit = 15000;
+        int total = 0;
+        int i = 1;
+        int year = 0;
+        do {
+            year = i / 12;
+            total = total + total / 100 * 7;
+            total = total + deposit;
+            if (i % 6 == 0) {
+                System.out.println("Месяц " + i + " сумма накоплений равна  " + total);
+            }
+
+            i++;
+        }
+        while (year < 9);
         System.out.println("     Задача 6.2");
         total = 0;
-        i=0;
-        for (year=0; year<9; year++){
-           do {
-               i++;
-               total = total + total / 100 * 7;
-               total = total + deposit;
-               if (i % 6 == 0) {
-                   System.out.println("Месяц " + i + " сумма накоплений равна  " + total);
-               }
-           }
-                while (i%12!=0);
-                continue;
+        i = 0;
+        for (year = 0; year < 9; year++) {
+            do {
+                i++;
+                total = total + total / 100 * 7;
+                total = total + deposit;
+                if (i % 6 == 0) {
+                    System.out.println("Месяц " + i + " сумма накоплений равна  " + total);
+                }
+            }
+            while (i % 12 != 0);
+            continue;
         }
     }
+
     public static void task7() {
         System.out.println("     Задача 7.1");
         int friday = 2;
-                while (friday <=31){
-                    System.out.println("Сегодня пятница, " +friday+"-е число. Необходимо подготовить отчет");
-                    friday = friday +7;
+        while (friday <= 31) {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
+            friday = friday + 7;
         }
-                System.out.println("     Задача 7.2");
+        System.out.println("     Задача 7.2");
         friday = 2;
 
-        for (int day=0; friday <31; day++){
-            if (day%7==0){
-                System.out.println("Сегодня пятница, " +friday+"-е число. Необходимо подготовить отчет");
+        for (int day = 0; friday < 31; day++) {
+            if (day % 7 == 0) {
+                System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
 
             }
             friday++;
@@ -126,13 +132,14 @@ public class Main {
 
 
     }
+
     public static void task8() {
         System.out.println("     Задача 8");
         int thisyear = 2023;
-        int _200Yearsago=thisyear-200;
-        int after100years=thisyear+100;
-        for (int year = 0; year <= after100years; year += 79){
-            if(year >= _200Yearsago && year <= after100years) {
+        int _200Yearsago = thisyear - 200;
+        int after100years = thisyear + 100;
+        for (int year = 0; year <= after100years; year += 79) {
+            if (year >= _200Yearsago && year <= after100years) {
                 System.out.println(year);
             }
         }
